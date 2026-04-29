@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	/* h1, p {color: orange; } */
+</style>
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+<script>
+
+	$(function() { 
+		$('#name').val('Hello Jquery!!!');
+		
+		let name2El = document.getElementById('name2')
+		name2El.value = 'Hello 제이쿼리';
+		
+		let name3El = $('name3')
+		name3El[0].value = 'Hello j쿼리';
+		
+	}	);
+</script>
+</head>
+<body>
+	  <form id="frm">
+    <input type="text" id="name" />
+    <input type="text" id="name2" />
+    <input type="text" id="name3" />
+    <input type="password"  />
+    <input type="radio"  />
+    <input type="checkbox"  />
+    <input type="file"  />
+  
+  </form>
+</body>
+</html>
