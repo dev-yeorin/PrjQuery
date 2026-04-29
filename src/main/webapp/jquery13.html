@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+</style>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<script>
+$(function() {
+	 //$('tr:odd').css('backgroundColor', 'black').css('color',			'white')			
+	 /*
+	 $('tr:odd').css({'backgroundColor': 'black',
+		 			  'color' :'white'})			
+	 $('tr:even').css({'backgroundColor': 'silver',
+		 			  'color' :'white'})			
+	 $('tr:first').css({'backgroundColor': 'silver',
+		 			  'color' :'black'})			
+	 *//*
+	 $('button').on('click', function( event ) {
+	 //console.log(event)
+	 const btnEl = event.target // 클릭한 대상 (button)
+	 //alert( $(btnEl).html() ) // btnEl.innerHTML
+	 if($(btnEl).html() == 'Click Me Show')
+		 $('table').show()
+	 if($(btnEl).html() == 'Click Me Hide')
+		 $('table').hide()
+	 })
+	 */
+	 /*
+	 $('button').on('click', function(  ) {
+		 console.log(this) // event.target
+		 if($(this).html() == 'Click Me Show')
+			 $('table').show()
+		 if($(this).html() == 'Click Me Hide')
+			 $('table').hide()
+	 })
+	 
+	 $('table tr').mouseover( function( ) {
+		 //console.dir(this)
+		 $(this).css({
+			 backgroundColor: 'yellow',
+			 color			: 'blue'
+			 
+		 })
+	 })
+	 */
+	 /*
+	 $('table tr')
+	 	.mouseover( function( ) {
+		 //console.dir(this)
+		 $(this).css({
+			 backgroundColor: 'yellow',
+			 color			: 'blue'
+			 
+		 })
+	 })
+	 .mouseout(function() {
+		 $(this).css({
+			 backgroundColor: 'black',
+			 color			: 'white'
+			 
+		 })
+	 })
+	 */
+	 $('table tr').on({
+		 mouseover : function(){
+			 $(this).css({
+				 backgroundColor: 'cyan',
+				 color			: 'white'
+			 })
+		 },
+		 mouseout  : function(){
+			 $(this).css({
+				 backgroundColor: 'white',
+				 color			: 'black'
+			 })
+		 }
+	 })
+})
+</script>
+</head>
+<body>
+ <button>Click Me Show</button>
+   <button>Click Me Hide</button>
+   <table>
+     <tr>
+	    <td>번호</td>
+	    <td>종목</td>
+	    <td>수량</td>
+	 </tr>
+     <tr>
+	    <td>1</td>
+	    <td>사과</td>
+	    <td>100</td>
+	 </tr>
+	 <tr>
+	    <td>2</td>
+	    <td>바나나</td>
+	    <td>200</td>
+	 </tr>
+	 <tr>
+	    <td>3</td>
+	    <td>수박</td>
+	    <td>150</td>
+	 </tr>
+	  <tr>
+	    <td>4</td>
+	    <td>딸기</td>
+	    <td>300</td>
+	 </tr>
+   </table>
+</body>
+</html>
